@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("bghalaman.jpg") no-repeat center/cover;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(0,0,0,0.2);
+  z-index: -1;
+}
+
+
+.navbar {
+  background: black;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.navbar a:hover { background: gray; }
+
+
+.foto-bulat {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid whitesmoke;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: gray;
+  color: black;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.button:hover { background: white; color: blue; }

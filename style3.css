@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.blur-background {
+  background: url("bghalaman.jpg") no-repeat center center/cover;
+  position: fixed;
+  inset: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: -1; 
+}
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar a {
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.navbar a:hover {
+    background-color: gray;
+    transform: scale(1.05);
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.profile-image img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid whitesmoke;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 30px;
+}
+
+.biodata-container,
+.pengalaman-container {
+    background: #fff;
+    padding: 24px 32px;
+    max-width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: grey;
+    margin-bottom: 12px;
+}
+
+.profile-info p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
